@@ -1,0 +1,74 @@
+﻿# CALWF 风险词表
+# 每行一个词或短语
+# 以 # 开头的行是注释
+#
+# 分类：
+#   1. 绝对化表达
+#   2. 空泛套话
+#   3. 提示残留
+#   4. 学术不端暗示
+
+# ============ 1. 绝对化表达 ============
+always
+never
+everyone
+nobody
+all people
+definitely
+absolutely
+certainly
+undoubtedly
+without doubt
+must be
+cannot be denied
+it is certain that
+there is no doubt that
+
+# ============ 2. 空泛套话 ============
+in conclusion
+to sum up
+in summary
+as we all know
+it is well known that
+it is widely believed that
+it goes without saying
+last but not least
+in today's society
+in modern society
+with the development of
+with the rapid development of
+plays an important role
+plays a crucial role
+plays a vital role
+a double-edged sword
+every coin has two sides
+as far as i am concerned
+from my perspective
+in my humble opinion
+
+# ============ 3. 提示残留 ============
+as an ai
+as a language model
+i cannot
+i'm sorry
+i am sorry
+i apologize
+as an assistant
+as requested
+based on your request
+the user asked
+following your instructions
+here is the essay
+here's the essay
+sure, here
+certainly, here
+
+# ============ 4. 学术不端暗示 ============
+plagiarism
+copy from
+copied from
+cheat
+cheating
+fabricated
+made up data
+fake data

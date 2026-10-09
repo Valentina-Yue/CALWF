@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CALWF 分析报告</title>
+<style>
+
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --text: #24292f;
+  --muted: #656d76;
+  --border: #d0d7de;
+  --ai: #cf222e;
+  --human: #1a7f37;
+  --uncertain: #bf8700;
+  --accent: #0969da;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg); color: var(--text);
+  max-width: 1200px; margin: 0 auto; padding: 24px;
+  line-height: 1.6;
+}
+h1 { border-bottom: 2px solid var(--border); padding-bottom: 12px; }
+h2 { margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { margin-top: 28px; color: var(--accent); }
+.meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+table {
+  border-collapse: collapse; width: 100%; margin: 12px 0;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden;
+}
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: #f6f8fa; font-weight: 600; }
+tr:last-child td { border-bottom: none; }
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 20px; margin: 20px 0;
+}
+.bar {
+  display: inline-block; height: 14px; border-radius: 3px;
+  vertical-align: middle; margin-right: 8px;
+}
+.bar-bg { background: #eaeef2; width: 200px; }
+.bar-fill { background: var(--accent); }
+.verdict-ai { color: var(--ai); font-weight: 700; }
+.verdict-human { color: var(--human); font-weight: 700; }
+.verdict-uncertain { color: var(--uncertain); font-weight: 700; }
+.risk-high { color: var(--ai); font-weight: 700; }
+.risk-medium { color: var(--uncertain); font-weight: 700; }
+.risk-low { color: var(--human); }
+.tag {
+  display: inline-block; padding: 2px 8px; border-radius: 12px;
+  background: #eaeef2; font-size: 12px; margin: 2px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+.footer {
+  margin-top: 60px; padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted); font-size: 13px; text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>CALWF 分析报告</h1>
+<div class="meta">生成时间：2026-10-09 11:21:56 &middot; 文档总数：5</div>
+<h2>模型概览</h2>
+<table>
+<thead>
+<tr><th>模型</th><th>篇数</th><th>判AI</th><th>判Human</th><th>不确定</th><th>平均AI嫌疑</th><th>SWECCL锚定</th><th>BAWE锚定</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>DeepSeek</strong></td><td>1</td><td>1</td><td>0</td><td>0</td><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:149px"></span></span>74.51%</td><td>53.49%</td><td>41.64%</td></tr>
+<tr><td><strong>Doubao</strong></td><td>1</td><td>1</td><td>0</td><td>0</td><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:145px"></span></span>72.79%</td><td>55.21%</td><td>43.70%</td></tr>
+<tr><td><strong>ChatGLM</strong></td><td>1</td><td>1</td><td>0</td><td>0</td><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:157px"></span></span>78.92%</td><td>49.08%</td><td>37.81%</td></tr>
+<tr><td><strong>Kimi</strong></td><td>1</td><td>1</td><td>0</td><td>0</td><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:132px"></span></span>66.26%</td><td>66.74%</td><td>57.54%</td></tr>
+<tr><td><strong>Qwen</strong></td><td>1</td><td>1</td><td>0</td><td>0</td><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:123px"></span></span>61.68%</td><td>66.32%</td><td>60.71%</td></tr>
+</tbody>
+</table>
+<h2>逐篇分析</h2>
+<div class="card">
+<h3>1. LLM_ChatGLM_p001_r1</h3>
+<table>
+<tr><th>AI 嫌疑度</th><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:157px"></span></span><strong>78.92%</strong></td></tr>
+<tr><th>人味指数</th><td>21.08%</td></tr>
+<tr><th>SWECCL 锚定</th><td>49.08%</td></tr>
+<tr><th>BAWE 锚定</th><td>37.81%</td></tr>
+<tr><th>判定</th><td class="verdict-ai">AI</td></tr>
+<tr><th>风险等级</th><td class="risk-low">Low</td></tr>
+</table>
+<h4>模型归因（top-3）</h4>
+<ul>
+<li><strong>ChatGLM</strong> 距离 1.85 置信度 <strong>53.84%</strong></li>
+<li><strong>Kimi</strong> 距离 2.91 置信度 <strong>34.25%</strong></li>
+<li><strong>Doubao</strong> 距离 8.33 置信度 <strong>11.91%</strong></li>
+</ul>
+<h4>风险词命中</h4>
+<div>
+<span class="tag">never</span>
+</div>
+<h4>最相似 SWECCL 文档</h4>
+<div>
+<span class="tag">SWECCL_A104NGG</span>
+<span class="tag">SWECCL_A101SD</span>
+<span class="tag">SWECCL_A103NGG</span>
+</div>
+<h4>最相似 BAWE 文档</h4>
+<div>
+<span class="tag">BAWE_0098a</span>
+<span class="tag">BAWE_0057a</span>
+<span class="tag">BAWE_0061d</span>
+</div>
+</div>
+<div class="card">
+<h3>2. LLM_DeepSeek_p001_r1</h3>
+<table>
+<tr><th>AI 嫌疑度</th><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:149px"></span></span><strong>74.51%</strong></td></tr>
+<tr><th>人味指数</th><td>25.49%</td></tr>
+<tr><th>SWECCL 锚定</th><td>53.49%</td></tr>
+<tr><th>BAWE 锚定</th><td>41.64%</td></tr>
+<tr><th>判定</th><td class="verdict-ai">AI</td></tr>
+<tr><th>风险等级</th><td class="risk-low">Low</td></tr>
+</table>
+<h4>模型归因（top-3）</h4>
+<ul>
+<li><strong>DeepSeek</strong> 距离 1.66 置信度 <strong>59.98%</strong></li>
+<li><strong>ChatGLM</strong> 距离 3.89 置信度 <strong>25.63%</strong></li>
+<li><strong>Doubao</strong> 距离 6.90 置信度 <strong>14.39%</strong></li>
+</ul>
+<h4>风险词命中</h4>
+<div>
+<span class="tag">never</span>
+</div>
+<h4>最相似 SWECCL 文档</h4>
+<div>
+<span class="tag">SWECCL_A104NGG</span>
+<span class="tag">SWECCL_A101SD</span>
+<span class="tag">SWECCL_A101HZKD</span>
+</div>
+<h4>最相似 BAWE 文档</h4>
+<div>
+<span class="tag">BAWE_0098a</span>
+<span class="tag">BAWE_0057a</span>
+<span class="tag">BAWE_0285b</span>
+</div>
+</div>
+<div class="card">
+<h3>3. LLM_Doubao_p001_r1</h3>
+<table>
+<tr><th>AI 嫌疑度</th><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:145px"></span></span><strong>72.79%</strong></td></tr>
+<tr><th>人味指数</th><td>27.21%</td></tr>
+<tr><th>SWECCL 锚定</th><td>55.21%</td></tr>
+<tr><th>BAWE 锚定</th><td>43.70%</td></tr>
+<tr><th>判定</th><td class="verdict-ai">AI</td></tr>
+<tr><th>风险等级</th><td class="risk-low">Low</td></tr>
+</table>
+<h4>模型归因（top-3）</h4>
+<ul>
+<li><strong>Doubao</strong> 距离 1.40 置信度 <strong>71.12%</strong></li>
+<li><strong>ChatGLM</strong> 距离 6.05 置信度 <strong>16.42%</strong></li>
+<li><strong>DeepSeek</strong> 距离 7.96 置信度 <strong>12.46%</strong></li>
+</ul>
+<h4>风险词命中</h4>
+<div>
+<span class="tag">in conclusion</span>
+</div>
+<h4>最相似 SWECCL 文档</h4>
+<div>
+<span class="tag">SWECCL_A104NGG</span>
+<span class="tag">SWECCL_A101SD</span>
+<span class="tag">SWECCL_A101HZKD</span>
+</div>
+<h4>最相似 BAWE 文档</h4>
+<div>
+<span class="tag">BAWE_0098a</span>
+<span class="tag">BAWE_0057a</span>
+<span class="tag">BAWE_0061d</span>
+</div>
+</div>
+<div class="card">
+<h3>4. LLM_Kimi_p001_r1</h3>
+<table>
+<tr><th>AI 嫌疑度</th><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:132px"></span></span><strong>66.26%</strong></td></tr>
+<tr><th>人味指数</th><td>33.74%</td></tr>
+<tr><th>SWECCL 锚定</th><td>66.74%</td></tr>
+<tr><th>BAWE 锚定</th><td>57.54%</td></tr>
+<tr><th>判定</th><td class="verdict-ai">AI</td></tr>
+<tr><th>风险等级</th><td class="risk-low">Low</td></tr>
+</table>
+<h4>模型归因（top-3）</h4>
+<ul>
+<li><strong>Kimi</strong> 距离 1.42 置信度 <strong>70.33%</strong></li>
+<li><strong>Doubao</strong> 距离 6.54 置信度 <strong>15.20%</strong></li>
+<li><strong>DeepSeek</strong> 距离 6.86 置信度 <strong>14.47%</strong></li>
+</ul>
+<h4>最相似 SWECCL 文档</h4>
+<div>
+<span class="tag">SWECCL_A104NGG</span>
+<span class="tag">SWECCL_A101SD</span>
+<span class="tag">SWECCL_A109XSD</span>
+</div>
+<h4>最相似 BAWE 文档</h4>
+<div>
+<span class="tag">BAWE_0098a</span>
+<span class="tag">BAWE_0057a</span>
+<span class="tag">BAWE_0061d</span>
+</div>
+</div>
+<div class="card">
+<h3>5. LLM_Qwen_p001_r1</h3>
+<table>
+<tr><th>AI 嫌疑度</th><td><span class="bar bar-bg"><span class="bar bar-fill" style="width:123px"></span></span><strong>61.68%</strong></td></tr>
+<tr><th>人味指数</th><td>38.32%</td></tr>
+<tr><th>SWECCL 锚定</th><td>66.32%</td></tr>
+<tr><th>BAWE 锚定</th><td>60.71%</td></tr>
+<tr><th>判定</th><td class="verdict-ai">AI</td></tr>
+<tr><th>风险等级</th><td class="risk-low">Low</td></tr>
+</table>
+<h4>模型归因（top-3）</h4>
+<ul>
+<li><strong>Qwen</strong> 距离 1.74 置信度 <strong>57.42%</strong></li>
+<li><strong>ChatGLM</strong> 距离 3.44 置信度 <strong>29.01%</strong></li>
+<li><strong>Doubao</strong> 距离 7.31 置信度 <strong>13.57%</strong></li>
+</ul>
+<h4>风险词命中</h4>
+<div>
+<span class="tag">in conclusion</span>
+</div>
+<h4>最相似 SWECCL 文档</h4>
+<div>
+<span class="tag">SWECCL_A104NGG</span>
+<span class="tag">SWECCL_A103NGG</span>
+<span class="tag">SWECCL_A103FYSY</span>
+</div>
+<h4>最相似 BAWE 文档</h4>
+<div>
+<span class="tag">BAWE_0098a</span>
+<span class="tag">BAWE_0057a</span>
+<span class="tag">BAWE_0061d</span>
+</div>
+</div>
+<div class="footer">
+CALWF - Corpus-Anchored LLM Writing Forensics v1.0<br>
+语料锚定镜 · 基于 SWECCL 与 BAWE 的大模型英语写作取证系统
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿{
+    "_comment": "CALWF 配置文件",
+    "_comment_2": "修改以下路径以匹配你电脑上的实际位置",
+    "_comment_3": "data_root 是项目数据目录",
+    "_comment_4": "raw_root 是原始语料库根目录（SWECCL 和 BAWE 的父目录）",
+
+    "data_root": "D:/CALWF/data",
+    "raw_root": "C:/Users/asus/Desktop/Linguistics/Corpus/Corpus sample"
+}

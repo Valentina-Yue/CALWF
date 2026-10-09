@@ -1,0 +1,42 @@
+﻿# ============================================================
+# CALWF .gitignore
+# ============================================================
+
+# ---------- 构建产物 ----------
+build/
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+*.so
+*.dylib
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# ---------- IDE / 编辑器 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- 原始语料库（版权保护）----------
+# SWECCL 和 BAWE 原始数据不上传
+data/raw/
+data/index/*.ngram
+data/llm/*/
+
+# ---------- 大文件 ----------
+*.zip
+*.tar.gz
+*.7z
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+docs/archive/

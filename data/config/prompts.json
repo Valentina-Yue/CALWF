@@ -1,0 +1,109 @@
+﻿{
+  "version": "1.0",
+  "description": "CALWF Prompt 矩阵 - 3 题目 × 4 水平 = 12 个 prompt",
+  "prompts": [
+    {
+      "prompt_id": "p001",
+      "genre": "Argumentation",
+      "topic": "Degree certificates",
+      "target_level": "CET4",
+      "target_words": 150,
+      "text": "Write an argumentative essay on the following topic. State your opinion clearly and support it with reasons and examples.\n\nTopic: Nowadays, people pay more and more attention to degree certificates. In many institutions, one's promotion is primarily decided by whether one has obtained a graduate degree or not. A growing number of critics say that if this tendency goes to the extreme, young people may be misled. A degree certificate can reflect only one's academic achievements but not all abilities essential for a successful career.\n\nWrite an essay of approximately 150 words."
+    },
+    {
+      "prompt_id": "p002",
+      "genre": "Argumentation",
+      "topic": "Degree certificates",
+      "target_level": "CET6",
+      "target_words": 180,
+      "text": "Write an argumentative essay on the following topic. State your opinion clearly and support it with reasons and examples.\n\nTopic: Nowadays, people pay more and more attention to degree certificates. In many institutions, one's promotion is primarily decided by whether one has obtained a graduate degree or not. A growing number of critics say that if this tendency goes to the extreme, young people may be misled. A degree certificate can reflect only one's academic achievements but not all abilities essential for a successful career.\n\nWrite an essay of approximately 180 words."
+    },
+    {
+      "prompt_id": "p003",
+      "genre": "Argumentation",
+      "topic": "Degree certificates",
+      "target_level": "TEM4",
+      "target_words": 200,
+      "text": "Write an argumentative essay on the following topic. State your opinion clearly and support it with reasons and examples.\n\nTopic: Nowadays, people pay more and more attention to degree certificates. In many institutions, one's promotion is primarily decided by whether one has obtained a graduate degree or not. A growing number of critics say that if this tendency goes to the extreme, young people may be misled. A degree certificate can reflect only one's academic achievements but not all abilities essential for a successful career.\n\nWrite an essay of approximately 200 words."
+    },
+    {
+      "prompt_id": "p004",
+      "genre": "Argumentation",
+      "topic": "Degree certificates",
+      "target_level": "TEM8",
+      "target_words": 300,
+      "text": "Write an argumentative essay on the following topic. State your opinion clearly and support it with reasons and examples.\n\nTopic: Nowadays, people pay more and more attention to degree certificates. In many institutions, one's promotion is primarily decided by whether one has obtained a graduate degree or not. A growing number of critics say that if this tendency goes to the extreme, young people may be misled. A degree certificate can reflect only one's academic achievements but not all abilities essential for a successful career.\n\nWrite an essay of approximately 300 words."
+    },
+    {
+      "prompt_id": "p005",
+      "genre": "Exposition",
+      "topic": "AI and language learning",
+      "target_level": "CET4",
+      "target_words": 150,
+      "text": "Write an expository essay on the following topic. Explain the concept clearly and provide relevant details and examples.\n\nTopic: Artificial intelligence is changing the way people learn languages. Explain what AI is, how it is used in language learning, and what its advantages and disadvantages are.\n\nWrite an essay of approximately 150 words."
+    },
+    {
+      "prompt_id": "p006",
+      "genre": "Exposition",
+      "topic": "AI and language learning",
+      "target_level": "CET6",
+      "target_words": 180,
+      "text": "Write an expository essay on the following topic. Explain the concept clearly and provide relevant details and examples.\n\nTopic: Artificial intelligence is changing the way people learn languages. Explain what AI is, how it is used in language learning, and what its advantages and disadvantages are.\n\nWrite an essay of approximately 180 words."
+    },
+    {
+      "prompt_id": "p007",
+      "genre": "Exposition",
+      "topic": "AI and language learning",
+      "target_level": "TEM4",
+      "target_words": 200,
+      "text": "Write an expository essay on the following topic. Explain the concept clearly and provide relevant details and examples.\n\nTopic: Artificial intelligence is changing the way people learn languages. Explain what AI is, how it is used in language learning, and what its advantages and disadvantages are.\n\nWrite an essay of approximately 200 words."
+    },
+    {
+      "prompt_id": "p008",
+      "genre": "Exposition",
+      "topic": "AI and language learning",
+      "target_level": "TEM8",
+      "target_words": 300,
+      "text": "Write an expository essay on the following topic. Explain the concept clearly and provide relevant details and examples.\n\nTopic: Artificial intelligence is changing the way people learn languages. Explain what AI is, how it is used in language learning, and what its advantages and disadvantages are.\n\nWrite an essay of approximately 300 words."
+    },
+    {
+      "prompt_id": "p009",
+      "genre": "Narration",
+      "topic": "Unforgettable English learning experience",
+      "target_level": "CET4",
+      "target_words": 150,
+      "text": "Write a narrative essay on the following topic. Tell a story with clear time, place, characters, and events.\n\nTopic: Describe an unforgettable experience you had while learning English. It can be a success, a failure, or a moment that changed your attitude towards English learning.\n\nWrite an essay of approximately 150 words."
+    },
+    {
+      "prompt_id": "p010",
+      "genre": "Narration",
+      "topic": "Unforgettable English learning experience",
+      "target_level": "CET6",
+      "target_words": 180,
+      "text": "Write a narrative essay on the following topic. Tell a story with clear time, place, characters, and events.\n\nTopic: Describe an unforgettable experience you had while learning English. It can be a success, a failure, or a moment that changed your attitude towards English learning.\n\nWrite an essay of approximately 180 words."
+    },
+    {
+      "prompt_id": "p011",
+      "genre": "Narration",
+      "topic": "Unforgettable English learning experience",
+      "target_level": "TEM4",
+      "target_words": 200,
+      "text": "Write a narrative essay on the following topic. Tell a story with clear time, place, characters, and events.\n\nTopic: Describe an unforgettable experience you had while learning English. It can be a success, a failure, or a moment that changed your attitude towards English learning.\n\nWrite an essay of approximately 200 words."
+    },
+    {
+      "prompt_id": "p012",
+      "genre": "Narration",
+      "topic": "Unforgettable English learning experience",
+      "target_level": "TEM8",
+      "target_words": 300,
+      "text": "Write a narrative essay on the following topic. Tell a story with clear time, place, characters, and events.\n\nTopic: Describe an unforgettable experience you had while learning English. It can be a success, a failure, or a moment that changed your attitude towards English learning.\n\nWrite an essay of approximately 300 words."
+    }
+  ],
+  "models": [
+    { "folder": "DeepSeek", "display": "DeepSeek",   "full_name": "DeepSeek" },
+    { "folder": "Doubao",   "display": "豆包",        "full_name": "Doubao" },
+    { "folder": "ChatGLM",  "display": "智谱清言",    "full_name": "ChatGLM" },
+    { "folder": "Kimi",     "display": "Kimi",       "full_name": "Kimi" },
+    { "folder": "Qwen",     "display": "千问",        "full_name": "Qwen" }
+  ]
+}
